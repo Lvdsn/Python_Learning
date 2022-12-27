@@ -1,0 +1,40 @@
+# python Lists practice
+# Lists can be used to store multiple itens in a variable, like:
+
+list1 = ["ladson", 24, 1.78]
+print(list1)
+
+# The funcion "len()" can show how much itens a list have and other features
+
+print(len(list1))
+
+# The function "list()" is a list creator, it must be used with 2 pairs of extra ()
+
+list2 = list(('ladson', 24, 1.78))
+print(list2)
+
+# Lists are classified by the type 'List'
+
+print(type(list2))
+
+# to acess itens in a list we must use index values
+
+list3 = ['person_1', 'person_2', 'person_3', 'person_4']
+# will return the 3 and 4 value in the list
+print(list3 [2:4])
+# will return all itens except the declared 
+print(list3[:3])
+# will return the first item in a list
+print(list3[0])
+# will return the second item in a list
+print(list3[1])
+# will return the 5 item back-to-front in a lust
+print(list3[-3])
+# will return the rest of the list starting from the selected item
+print(list3[2:])
+# will return an item to another in the predetermined sequence
+print(list3[-3:-1])
+# will check if an item is present in the list
+if 'person_3' in list3:
+  print('Yes, person_3 is in the list.')
+
