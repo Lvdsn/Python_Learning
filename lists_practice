@@ -1,7 +1,7 @@
 # python Lists practice
 # Lists can be used to store multiple itens in a variable, like:
 
-list1 = ["ladson", 24, 1.78]
+list1 = ["person", 24, 1.78]
 print(list1)
 
 # The funcion "len()" can show how much itens a list have and other features
@@ -10,7 +10,7 @@ print(len(list1))
 
 # The function "list()" is a list creator, it must be used with 2 pairs of extra ()
 
-list2 = list(('ladson', 24, 1.78))
+list2 = list(('person', 24, 1.78))
 print(list2)
 
 # Lists are classified by the type 'List'
@@ -37,4 +37,39 @@ print(list3[-3:-1])
 # will check if an item is present in the list
 if 'person_3' in list3:
   print('Yes, person_3 is in the list.')
+  
+# will change a value in the list
+  
+list4 = ['person_1', 'person_2', 'person_3', 'person_4']
+list4[3] = 'person_5'
+print(list4)
+  
+# will add an item to the end of the list
+  
+list5 = ['person_1', 'person_2', 'person_3', 'person_4']
+list5.append('person_5')
+print(list5)
 
+# will add a item to the specified index in the list
+
+list6 = ['person_1', 'person_2', 'person_3', 'person_4']
+list6.insert(1, 'person_1.5')
+print(list6)
+
+# will extend the current list with another
+
+list7 = ['person_1', 'person_2', 'person_3', 'person_4']
+list7.extend(list6)
+print(list7)
+
+# will remove an item in the list
+
+list8 = ['person_1', 'person_2', 'person_3', 'person_4']
+list8.pop(2)
+print(list8)
+
+# will clear the list
+
+list9 = ['person_1', 'person_2', 'person_3', 'person_4']
+list9.clear()
+print(list9)
